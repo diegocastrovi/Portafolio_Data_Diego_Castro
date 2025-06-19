@@ -1,7 +1,7 @@
 
 # Sistema de Gestión Bancaria con SQL Server
 
-Proyecto académico/práctico en SQL Server que simula la estructura y operación básica de un banco. Incluye creación de base de datos, tablas relacionales, consultas SQL, funciones, procedimientos almacenados y generación de reportes transaccionales y estadísticos.
+Proyecto académico/práctico en SQL Server que simula la estructura y operación básica de un sistema bancario. Incluye creación de base de datos, creación de registros, tablas relacionales, consultas SQL, funciones, procedimientos almacenados y generación de reportes transaccionales y estadísticos.
 
 ---
 
@@ -11,7 +11,6 @@ Este proyecto simula la operativa de un banco, permitiendo:
 - Registrar clientes, empleados, cuentas, productos y transacciones.
 - Realizar consultas analíticas y de control.
 - Gestionar transacciones bancarias con control de saldo.
-- Generar reportes financieros y operativos.
 - Crear procedimientos almacenados y funciones para automatizar operaciones.
 
 ---
@@ -31,9 +30,10 @@ Este proyecto simula la operativa de un banco, permitiendo:
 
 ```
 /SQL/
- ├── Create_database.sql              # Script de creación de base de datos y tablas
- ├── dsrp_querys.sql                  # Consultas de análisis y reporting sobre la base
- ├── Funct_procedures_ex.sql          # Procedimientos almacenados y funciones definidas
+ Create_database.sql              # Script de creación de base de datos y tablas
+ INSERT_VALUES_DSRP_NEW.sql       # Script de creación de datos ficticios
+ dsrp_querys.sql                  # Consultas de análisis y reporting sobre la base
+ Funct_procedures_ex.sql          # Procedimientos almacenados y funciones definidas
 ```
 
 ---
