@@ -31,7 +31,7 @@ Este proyecto simula la operativa de un banco, permitiendo:
 ```
 /SQL/
  Create_database.sql              # Script de creación de base de datos y tablas
- INSERT_VALUES_DSRP_NEW.sql       # Script de creación de datos ficticios
+ Insert_fict_values.sql          # Script de creación de datos ficticios
  dsrp_querys.sql                  # Consultas de análisis y reporting sobre la base
  Funct_procedures_ex.sql          # Procedimientos almacenados y funciones definidas
 ```
@@ -53,6 +53,11 @@ Este proyecto simula la operativa de un banco, permitiendo:
   - `atenciones`
   - `sucursales`
 - Incluye constraints de integridad referencial.
+
+### Insert_fict_values.sql
+-Inserta registros para todas las tablas creadas
+-Para las tablas clientes, empleados, cuentas, sucursales, tipo_transacciones, tipo_atenciones y productos se crearon valores ficticios
+-Para las tablas atenciones y transacciones se generaron valores aleatorios utilizando los valores de los registros ya creados
 
 ### dsrp_querys.sql
 Contiene consultas SQL para:
@@ -91,14 +96,12 @@ Incluye:
 ## Cómo usar
 
 1. Ejecutar `Create_database.sql` en SQL Server.
-2. Poblar datos de ejemplo según se requiera.
-3. Ejecutar `dsrp_querys.sql` para realizar consultas de análisis.
-4. Ejecutar `Funct_procedures_ex.sql` para definir procedimientos y funciones.
+2. Ejecutar `Insert_fict_values.sql` para registrar valores en las tablas.
+3. Ejecutar `Funct_procedures_ex.sql` para definir procedimientos y funciones.
+4. Ejecutar `dsrp_querys.sql` para realizar consultas de análisis.
 5. Probar llamadas a procedimientos y funciones para ver resultados.
 
 ---
 
-## Contribuciones
 
-Proyecto desarrollado por **Diego Castro** para prácticas avanzadas en modelado de datos relacional y desarrollo de consultas transaccionales y analíticas en SQL Server.
 
