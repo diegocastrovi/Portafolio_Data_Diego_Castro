@@ -6,61 +6,61 @@ GO
 INSERT INTO sucursales (nombre, direccion, descripcion)
 VALUES 
 ('Sucursal Lima Centro', 'Av. Abancay 345, Cercado de Lima', 'Sucursal principal en el centro de Lima'),
-('Sucursal Miraflores', 'Av. Larco 890, Miraflores', 'Sucursal en zona comercial y turÌstica'),
+('Sucursal Miraflores', 'Av. Larco 890, Miraflores', 'Sucursal en zona comercial y tur√≠stica'),
 ('Sucursal San Isidro', 'Av. Javier Prado 1230, San Isidro', 'Sucursal en distrito financiero'),
 ('Sucursal La Molina', 'Av. La Molina 456, La Molina', 'Sucursal residencial de alto flujo'),
-('Sucursal Callao', 'Av. Saenz PeÒa 987, Callao', 'Sucursal cercana al puerto y aeropuerto'),
-('Sucursal Surco', 'Av. Caminos del Inca 670, Santiago de Surco', 'Sucursal con atenciÛn especializada en crÈditos'),
+('Sucursal Callao', 'Av. Saenz Pe√±a 987, Callao', 'Sucursal cercana al puerto y aeropuerto'),
+('Sucursal Surco', 'Av. Caminos del Inca 670, Santiago de Surco', 'Sucursal con atenci√≥n especializada en cr√©ditos'),
 ('Sucursal San Miguel', 'Av. La Marina 1300, San Miguel', 'Sucursal para zona universitaria y comercial'),
 ('Sucursal Chorrillos', 'Av. Defensores del Morro 550, Chorrillos', 'Sucursal cercana a zona de playas'),
-('Sucursal Lince', 'Av. Arequipa 2500, Lince', 'Sucursal de atenciÛn r·pida y tr·mites'),
-('Sucursal Ate', 'Av. Nicol·s AyllÛn 980, Ate', 'Sucursal estratÈgica en zona industrial');
+('Sucursal Lince', 'Av. Arequipa 2500, Lince', 'Sucursal de atenci√≥n r√°pida y tr√°mites'),
+('Sucursal Ate', 'Av. Nicol√°s Ayll√≥n 980, Ate', 'Sucursal estrat√©gica en zona industrial');
 
 INSERT INTO tipo_atenciones (nombre, descripcion)
 VALUES
-('Apertura de Cuenta', 'AtenciÛn para apertura de cuentas de ahorro, corriente o CTS'),
-('Solicitud de CrÈdito', 'AsesorÌa y tr·mite de crÈditos personales, vehiculares o hipotecarios'),
-('Bloqueo de Tarjeta', 'AtenciÛn para bloqueo de tarjeta por pÈrdida, robo o uso no autorizado'),
-('Consultas Generales', 'AtenciÛn para consultas sobre productos, servicios y requisitos'),
-('ActualizaciÛn de Datos', 'ModificaciÛn de datos personales, de contacto o documentaciÛn');
+('Apertura de Cuenta', 'Atenci√≥n para apertura de cuentas de ahorro, corriente o CTS'),
+('Solicitud de Cr√©dito', 'Asesor√≠a y tr√°mite de cr√©ditos personales, vehiculares o hipotecarios'),
+('Bloqueo de Tarjeta', 'Atenci√≥n para bloqueo de tarjeta por p√©rdida, robo o uso no autorizado'),
+('Consultas Generales', 'Atenci√≥n para consultas sobre productos, servicios y requisitos'),
+('Actualizaci√≥n de Datos', 'Modificaci√≥n de datos personales, de contacto o documentaci√≥n');
 
 INSERT INTO productos (nombre, descripcion)
 VALUES
 ('Cuenta de Ahorro', 'Cuenta bancaria que permite ahorrar dinero y generar intereses mensuales.'),
-('Cuenta Corriente', 'Cuenta bancaria para operaciones diarias con chequera y lÌnea de sobregiro.'),
-('Tarjeta de CrÈdito Cl·sica', 'Tarjeta de crÈdito con lÌmite b·sico y promociones nacionales.'),
-('Tarjeta de CrÈdito Oro', 'Tarjeta de crÈdito con beneficios premium y programa de puntos.'),
-('Cuenta CTS', 'Cuenta bancaria para depÛsito de compensaciÛn por tiempo de servicios.');
+('Cuenta Corriente', 'Cuenta bancaria para operaciones diarias con chequera y l√≠nea de sobregiro.'),
+('Tarjeta de Cr√©dito Cl√°sica', 'Tarjeta de cr√©dito con l√≠mite b√°sico y promociones nacionales.'),
+('Tarjeta de Cr√©dito Oro', 'Tarjeta de cr√©dito con beneficios premium y programa de puntos.'),
+('Cuenta CTS', 'Cuenta bancaria para dep√≥sito de compensaci√≥n por tiempo de servicios.');
 
 INSERT INTO tipo_transacciones (nombre, descripcion)
 VALUES
-('DepÛsito en Efectivo', 'Ingreso de dinero en efectivo a una cuenta bancaria.'),
+('Dep√≥sito en Efectivo', 'Ingreso de dinero en efectivo a una cuenta bancaria.'),
 ('Retiro en Ventanilla', 'Retiro de dinero en efectivo realizado en sucursal.'),
 ('Transferencia a Terceros', 'Transferencia de fondos a cuentas de otros clientes del banco.'),
-('Pago de Servicios', 'Pago de servicios como luz, agua, telÈfono o internet.');
+('Pago de Servicios', 'Pago de servicios como luz, agua, tel√©fono o internet.');
 
 
 INSERT INTO clientes (cod_cliente, nombre, numero_documento, genero, fecha_nacimiento, direccion, telefono, email, created_at, updated_at, deleted_at, created_by, updated_by, deleted_by)
 VALUES
-('C00001', 'Luis Fern·ndez', '47652873101', 'M', '1985-04-12', 'Av. Brasil 123, Lima', '999123456', 'lfernandez@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
-('C00002', 'MarÌa GÛmez', '52764829102', 'F', '1990-07-24', 'Jr. Moquegua 456, Callao', '999234567', 'mgomez@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
+('C00001', 'Luis Fern√°ndez', '47652873101', 'M', '1985-04-12', 'Av. Brasil 123, Lima', '999123456', 'lfernandez@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
+('C00002', 'Mar√≠a G√≥mez', '52764829102', 'F', '1990-07-24', 'Jr. Moquegua 456, Callao', '999234567', 'mgomez@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
 ('C00003', 'Carlos Paredes', '56387910203', 'M', '1982-12-05', 'Av. Colonial 789, Lima', '999345678', 'cparedes@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
-('C00004', 'LucÌa Rojas', '49832764104', 'F', '1995-03-18', 'Jr. Ayacucho 321, Miraflores', '999456789', 'lrojas@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
+('C00004', 'Luc√≠a Rojas', '49832764104', 'F', '1995-03-18', 'Jr. Ayacucho 321, Miraflores', '999456789', 'lrojas@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
 ('C00005', 'Pedro Salas', '57891653005', 'M', '1988-11-30', 'Av. Benavides 555, Surco', '999567890', 'psalas@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
-('C00006', 'Rosa Campos', '51324897006', 'F', '1991-06-09', 'Calle ColÛn 654, San Isidro', '999678901', 'rcampos@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
-('C00007', 'Miguel Torres', '49673821907', 'M', '1987-01-22', 'Av. Canad· 778, San Borja', '999789012', 'mtorres@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
+('C00006', 'Rosa Campos', '51324897006', 'F', '1991-06-09', 'Calle Col√≥n 654, San Isidro', '999678901', 'rcampos@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
+('C00007', 'Miguel Torres', '49673821907', 'M', '1987-01-22', 'Av. Canad√° 778, San Borja', '999789012', 'mtorres@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
 ('C00008', 'Ana Morales', '58947361008', 'F', '1993-09-15', 'Av. Faucett 232, Callao', '999890123', 'amorales@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
-('C00009', 'Javier RamÌrez', '51468902709', 'M', '1984-08-11', 'Jr. Cuzco 100, BreÒa', '999901234', 'jramirez@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
+('C00009', 'Javier Ram√≠rez', '51468902709', 'M', '1984-08-11', 'Jr. Cuzco 100, Bre√±a', '999901234', 'jramirez@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
 ('C00010', 'Elena Mendoza', '52730981510', 'F', '1996-02-02', 'Av. La Marina 950, San Miguel', '999012345', 'emendoza@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
-('C00011', 'AndrÈs Ch·vez', '48761230911', 'M', '1990-10-27', 'Av. Salaverry 300, Jes˙s MarÌa', '999111222', 'achavez@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
-('C00012', 'SofÌa Ruiz', '57890261412', 'F', '1992-05-05', 'Jr. Ancash 445, Lima', '999222333', 'sruiz@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
-('C00013', 'Henry C·rdenas', '53497821313', 'M', '1986-03-20', 'Av. Javier Prado 500, La Molina', '999333444', 'hcardenas@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
-('C00014', 'Karina LeÛn', '52347189014', 'F', '1994-07-29', 'Calle Los Pinos 150, Miraflores', '999444555', 'kleon@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
+('C00011', 'Andr√©s Ch√°vez', '48761230911', 'M', '1990-10-27', 'Av. Salaverry 300, Jes√∫s Mar√≠a', '999111222', 'achavez@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
+('C00012', 'Sof√≠a Ruiz', '57890261412', 'F', '1992-05-05', 'Jr. Ancash 445, Lima', '999222333', 'sruiz@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
+('C00013', 'Henry C√°rdenas', '53497821313', 'M', '1986-03-20', 'Av. Javier Prado 500, La Molina', '999333444', 'hcardenas@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
+('C00014', 'Karina Le√≥n', '52347189014', 'F', '1994-07-29', 'Calle Los Pinos 150, Miraflores', '999444555', 'kleon@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
 ('C00015', 'Oscar Valverde', '59832761415', 'M', '1989-11-18', 'Av. Tomas Valle 600, Los Olivos', '999555666', 'ovalverde@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
 ('C00016', 'Natalia Aguirre', '50789132616', 'F', '1991-04-06', 'Av. El Polo 230, Surco', '999666777', 'naguirre@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
 ('C00017', 'Felipe Hurtado', '57632148917', 'M', '1985-09-13', 'Av. San Luis 880, San Borja', '999777888', 'fhurtado@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
 ('C00018', 'Camila Vargas', '58920374118', 'F', '1997-12-01', 'Jr. Loreto 212, Lima', '999888999', 'cvargas@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
-('C00019', 'VÌctor PeÒa', '51420367819', 'M', '1990-08-08', 'Av. Universitaria 4500, San Miguel', '999999000', 'vpena@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
+('C00019', 'V√≠ctor Pe√±a', '51420367819', 'M', '1990-08-08', 'Av. Universitaria 4500, San Miguel', '999999000', 'vpena@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL),
 ('C00020', 'Valeria Castro', '59981237020', 'F', '1995-05-21', 'Av. El Sol 321, La Molina', '999000111', 'vcastro@mail.com', GETDATE(), NULL, NULL, 1, NULL, NULL);
 
 INSERT INTO empleados (sucursal_id, supervisor_id, nombre, numero_documento, genero, fecha_nacimiento, direccion, telefono, email, email_institucional, puesto, salario, created_at, updated_at, deleted_at, created_by, updated_by, deleted_by)
@@ -70,56 +70,56 @@ VALUES
 (1, 1, 'Luis Torres', '40123123125', 'M', '1988-07-23', 'Av. Brasil 104', '999123003', 'ltorres@banco.com', 'ltorres@dsrp.pe', 'Asesor', 4700, GETDATE(), NULL, NULL, 1, NULL, NULL),
 
 -- Sucursal 2
-(2, NULL, 'MÛnica Paredes', '40123123126', 'F', '1982-08-09', 'Av. Larco 200', '999123004', 'mparedes@banco.com', 'mparedes@dsrp.pe', 'Supervisor', 9600, GETDATE(), NULL, NULL, 1, NULL, NULL),
-(2, 4, 'VÌctor Ramos', '40123123127', 'M', '1991-04-10', 'Av. Larco 202', '999123005', 'vramos@banco.com', 'vramos@dsrp.pe', 'Asesor', 4600, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(2, NULL, 'M√≥nica Paredes', '40123123126', 'F', '1982-08-09', 'Av. Larco 200', '999123004', 'mparedes@banco.com', 'mparedes@dsrp.pe', 'Supervisor', 9600, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(2, 4, 'V√≠ctor Ramos', '40123123127', 'M', '1991-04-10', 'Av. Larco 202', '999123005', 'vramos@banco.com', 'vramos@dsrp.pe', 'Asesor', 4600, GETDATE(), NULL, NULL, 1, NULL, NULL),
 (2, 4, 'Daniela Salas', '40123123128', 'F', '1989-01-30', 'Av. Larco 204', '999123006', 'dsalas@banco.com', 'dsalas@dsrp.pe', 'Asesor', 4700, GETDATE(), NULL, NULL, 1, NULL, NULL),
 
 -- Sucursal 3
-(3, NULL, 'Pedro C·rdenas', '40123123129', 'M', '1985-05-19', 'Av. Javier Prado 300', '999123007', 'pcardenas@banco.com', 'pcardenas@dsrp.pe', 'Supervisor', 9400, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(3, NULL, 'Pedro C√°rdenas', '40123123129', 'M', '1985-05-19', 'Av. Javier Prado 300', '999123007', 'pcardenas@banco.com', 'pcardenas@dsrp.pe', 'Supervisor', 9400, GETDATE(), NULL, NULL, 1, NULL, NULL),
 (3, 7, 'Lucero Vargas', '40123123130', 'F', '1992-12-12', 'Av. Javier Prado 302', '999123008', 'lvargas@banco.com', 'lvargas@dsrp.pe', 'Asesor', 4600, GETDATE(), NULL, NULL, 1, NULL, NULL),
 (3, 7, 'Renzo Gallardo', '40123123131', 'M', '1990-02-20', 'Av. Javier Prado 304', '999123009', 'rgallardo@banco.com', 'rgallardo@dsrp.pe', 'Asesor', 4700, GETDATE(), NULL, NULL, 1, NULL, NULL),
 
 -- Sucursal 4
-(4, NULL, 'Sandra LÛpez', '40123123132', 'F', '1983-11-04', 'Av. La Molina 400', '999123010', 'slopez@banco.com', 'slopez@dsrp.pe', 'Supervisor', 9500, GETDATE(), NULL, NULL, 1, NULL, NULL),
-(4, 10, 'HÈctor GarcÌa', '40123123133', 'M', '1989-09-28', 'Av. La Molina 402', '999123011', 'hgarcia@banco.com', 'hgarcia@dsrp.pe', 'Asesor', 4600, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(4, NULL, 'Sandra L√≥pez', '40123123132', 'F', '1983-11-04', 'Av. La Molina 400', '999123010', 'slopez@banco.com', 'slopez@dsrp.pe', 'Supervisor', 9500, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(4, 10, 'H√©ctor Garc√≠a', '40123123133', 'M', '1989-09-28', 'Av. La Molina 402', '999123011', 'hgarcia@banco.com', 'hgarcia@dsrp.pe', 'Asesor', 4600, GETDATE(), NULL, NULL, 1, NULL, NULL),
 (4, 10, 'Paola Ruiz', '40123123134', 'F', '1993-08-06', 'Av. La Molina 404', '999123012', 'pruiz@banco.com', 'pruiz@dsrp.pe', 'Asesor', 4650, GETDATE(), NULL, NULL, 1, NULL, NULL),
 
 -- Sucursal 5
-(5, NULL, 'Gustavo Zegarra', '40123123135', 'M', '1980-12-01', 'Av. Saenz PeÒa 500', '999123013', 'gzegarra@banco.com', 'gzegarra@dsrp.pe', 'Supervisor', 9700, GETDATE(), NULL, NULL, 1, NULL, NULL),
-(5, 13, 'Carmen Bravo', '40123123136', 'F', '1991-07-07', 'Av. Saenz PeÒa 502', '999123014', 'cbravo@banco.com', 'cbravo@dsrp.pe', 'Asesor', 4700, GETDATE(), NULL, NULL, 1, NULL, NULL),
-(5, 13, 'Diego Ramos', '40123123137', 'M', '1988-03-13', 'Av. Saenz PeÒa 504', '999123015', 'dramos@banco.com', 'dramos@dsrp.pe', 'Asesor', 4600, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(5, NULL, 'Gustavo Zegarra', '40123123135', 'M', '1980-12-01', 'Av. Saenz Pe√±a 500', '999123013', 'gzegarra@banco.com', 'gzegarra@dsrp.pe', 'Supervisor', 9700, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(5, 13, 'Carmen Bravo', '40123123136', 'F', '1991-07-07', 'Av. Saenz Pe√±a 502', '999123014', 'cbravo@banco.com', 'cbravo@dsrp.pe', 'Asesor', 4700, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(5, 13, 'Diego Ramos', '40123123137', 'M', '1988-03-13', 'Av. Saenz Pe√±a 504', '999123015', 'dramos@banco.com', 'dramos@dsrp.pe', 'Asesor', 4600, GETDATE(), NULL, NULL, 1, NULL, NULL),
 
 -- Sucursal 6
 (6, NULL, 'Natalia Herrera', '40123123138', 'F', '1985-06-10', 'Av. Caminos del Inca 600', '999123016', 'nherrera@banco.com', 'nherrera@dsrp.pe', 'Supervisor', 9400, GETDATE(), NULL, NULL, 1, NULL, NULL),
-(6, 16, '”scar Morales', '40123123139', 'M', '1990-02-02', 'Av. Caminos del Inca 602', '999123017', 'omorales@banco.com', 'omorales@dsrp.pe', 'Asesor', 4500, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(6, 16, '√ìscar Morales', '40123123139', 'M', '1990-02-02', 'Av. Caminos del Inca 602', '999123017', 'omorales@banco.com', 'omorales@dsrp.pe', 'Asesor', 4500, GETDATE(), NULL, NULL, 1, NULL, NULL),
 (6, 16, 'Carla Navarro', '40123123140', 'F', '1989-09-19', 'Av. Caminos del Inca 604', '999123018', 'cnavarro@banco.com', 'cnavarro@dsrp.pe', 'Asesor', 4600, GETDATE(), NULL, NULL, 1, NULL, NULL),
 
 -- Sucursal 7
-(7, NULL, 'Roberto AlarcÛn', '40123123141', 'M', '1982-11-30', 'Av. La Marina 1000', '999123019', 'ralarcon@banco.com', 'ralarcon@dsrp.pe', 'Supervisor', 9500, GETDATE(), NULL, NULL, 1, NULL, NULL),
-(7, 19, 'SofÌa Mendoza', '40123123142', 'F', '1993-03-25', 'Av. La Marina 1002', '999123020', 'smendoza@banco.com', 'smendoza@dsrp.pe', 'Asesor', 4550, GETDATE(), NULL, NULL, 1, NULL, NULL),
-(7, 19, '¡lvaro Reyes', '40123123143', 'M', '1989-07-14', 'Av. La Marina 1004', '999123021', 'areyes@banco.com', 'areyes@dsrp.pe', 'Asesor', 4700, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(7, NULL, 'Roberto Alarc√≥n', '40123123141', 'M', '1982-11-30', 'Av. La Marina 1000', '999123019', 'ralarcon@banco.com', 'ralarcon@dsrp.pe', 'Supervisor', 9500, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(7, 19, 'Sof√≠a Mendoza', '40123123142', 'F', '1993-03-25', 'Av. La Marina 1002', '999123020', 'smendoza@banco.com', 'smendoza@dsrp.pe', 'Asesor', 4550, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(7, 19, '√Ålvaro Reyes', '40123123143', 'M', '1989-07-14', 'Av. La Marina 1004', '999123021', 'areyes@banco.com', 'areyes@dsrp.pe', 'Asesor', 4700, GETDATE(), NULL, NULL, 1, NULL, NULL),
 
 -- Sucursal 8
-(8, NULL, 'VerÛnica Lazo', '40123123144', 'F', '1987-10-10', 'Av. Defensores del Morro 500', '999123022', 'vlazo@banco.com', 'vlazo@dsrp.pe', 'Supervisor', 9600, GETDATE(), NULL, NULL, 1, NULL, NULL),
-(8, 22, 'Manuel CÛrdova', '40123123145', 'M', '1991-04-04', 'Av. Defensores del Morro 502', '999123023', 'mcordova@banco.com', 'mcordova2@dsrp.pe', 'Asesor', 4500, GETDATE(), NULL, NULL, 1, NULL, NULL),
-(8, 22, 'Camila LeÛn', '40123123146', 'F', '1995-09-05', 'Av. Defensores del Morro 504', '999123024', 'cleon@banco.com', 'cleon@dsrp.pe', 'Asesor', 4600, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(8, NULL, 'Ver√≥nica Lazo', '40123123144', 'F', '1987-10-10', 'Av. Defensores del Morro 500', '999123022', 'vlazo@banco.com', 'vlazo@dsrp.pe', 'Supervisor', 9600, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(8, 22, 'Manuel C√≥rdova', '40123123145', 'M', '1991-04-04', 'Av. Defensores del Morro 502', '999123023', 'mcordova@banco.com', 'mcordova2@dsrp.pe', 'Asesor', 4500, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(8, 22, 'Camila Le√≥n', '40123123146', 'F', '1995-09-05', 'Av. Defensores del Morro 504', '999123024', 'cleon@banco.com', 'cleon@dsrp.pe', 'Asesor', 4600, GETDATE(), NULL, NULL, 1, NULL, NULL),
 
 -- Sucursal 9
-(9, NULL, 'Daniel Ch·vez', '40123123147', 'M', '1984-05-22', 'Av. Arequipa 2500', '999123025', 'dchavez@banco.com', 'dchavez@dsrp.pe', 'Supervisor', 9400, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(9, NULL, 'Daniel Ch√°vez', '40123123147', 'M', '1984-05-22', 'Av. Arequipa 2500', '999123025', 'dchavez@banco.com', 'dchavez@dsrp.pe', 'Supervisor', 9400, GETDATE(), NULL, NULL, 1, NULL, NULL),
 (9, 25, 'Marina Poma', '40123123148', 'F', '1992-11-18', 'Av. Arequipa 2502', '999123026', 'mpoma@banco.com', 'mpoma@dsrp.pe', 'Asesor', 4550, GETDATE(), NULL, NULL, 1, NULL, NULL),
-(9, 25, 'JosÈ Barrios', '40123123149', 'M', '1989-06-28', 'Av. Arequipa 2504', '999123027', 'jbarrios@banco.com', 'jbarrios@dsrp.pe', 'Asesor', 4700, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(9, 25, 'Jos√© Barrios', '40123123149', 'M', '1989-06-28', 'Av. Arequipa 2504', '999123027', 'jbarrios@banco.com', 'jbarrios@dsrp.pe', 'Asesor', 4700, GETDATE(), NULL, NULL, 1, NULL, NULL),
 
 -- Sucursal 10
-(10, NULL, 'Alejandra PÈrez', '40123123150', 'F', '1986-09-30', 'Av. Nicol·s AyllÛn 900', '999123028', 'aperez@banco.com', 'aperez@dsrp.pe', 'Supervisor', 9500, GETDATE(), NULL, NULL, 1, NULL, NULL),
-(10, 28, 'Sandro Quiroz', '40123123151', 'M', '1991-02-11', 'Av. Nicol·s AyllÛn 902', '999123029', 'squiroz@banco.com', 'squiroz@dsrp.pe', 'Asesor', 4600, GETDATE(), NULL, NULL, 1, NULL, NULL),
-(10, 28, 'RocÌo Salazar', '40123123152', 'F', '1990-12-17', 'Av. Nicol·s AyllÛn 904', '999123030', 'rsalazar@banco.com', 'rsalazar@dsrp.pe', 'Asesor', 4700, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(10, NULL, 'Alejandra P√©rez', '40123123150', 'F', '1986-09-30', 'Av. Nicol√°s Ayll√≥n 900', '999123028', 'aperez@banco.com', 'aperez@dsrp.pe', 'Supervisor', 9500, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(10, 28, 'Sandro Quiroz', '40123123151', 'M', '1991-02-11', 'Av. Nicol√°s Ayll√≥n 902', '999123029', 'squiroz@banco.com', 'squiroz@dsrp.pe', 'Asesor', 4600, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(10, 28, 'Roc√≠o Salazar', '40123123152', 'F', '1990-12-17', 'Av. Nicol√°s Ayll√≥n 904', '999123030', 'rsalazar@banco.com', 'rsalazar@dsrp.pe', 'Asesor', 4700, GETDATE(), NULL, NULL, 1, NULL, NULL),
 
 -- Empleados extra 
 (2, 4, 'Kevin Gonzales', '40123123153', 'M', '1992-04-13', 'Av. Larco 212', '999123031', 'kgonzales@banco.com', 'kgonzales@dsrp.pe', 'Asesor', 4650, GETDATE(), NULL, NULL, 1, NULL, NULL),
 (3, 7, 'Vanessa Rojas', '40123123154', 'F', '1991-11-11', 'Av. Javier Prado 312', '999123032', 'vrojas@banco.com', 'vrojas@dsrp.pe', 'Asesor', 4700, GETDATE(), NULL, NULL, 1, NULL, NULL),
 (6, 16, 'Alan Zambrano', '40123123155', 'M', '1988-07-16', 'Av. Caminos del Inca 606', '999123033', 'azambrano@banco.com', 'azambrano@dsrp.pe', 'Asesor', 4600, GETDATE(), NULL, NULL, 1, NULL, NULL),
-(8, 22, 'Melissa RamÌrez', '40123123156', 'F', '1993-03-27', 'Av. Defensores del Morro 506', '999123034', 'mramirez@banco.com', 'mramirez@dsrp.pe', 'Asesor', 4550, GETDATE(), NULL, NULL, 1, NULL, NULL),
-(9, 25, 'Hugo Beltr·n', '40123123157', 'M', '1989-09-03', 'Av. Arequipa 2506', '999123035', 'hbeltran@banco.com', 'hbeltran@dsrp.pe', 'Asesor', 4700, GETDATE(), NULL, NULL, 1, NULL, NULL);
+(8, 22, 'Melissa Ram√≠rez', '40123123156', 'F', '1993-03-27', 'Av. Defensores del Morro 506', '999123034', 'mramirez@banco.com', 'mramirez@dsrp.pe', 'Asesor', 4550, GETDATE(), NULL, NULL, 1, NULL, NULL),
+(9, 25, 'Hugo Beltr√°n', '40123123157', 'M', '1989-09-03', 'Av. Arequipa 2506', '999123035', 'hbeltran@banco.com', 'hbeltran@dsrp.pe', 'Asesor', 4700, GETDATE(), NULL, NULL, 1, NULL, NULL);
 
 
 --Generando valores aleatorios de atenciones
@@ -132,12 +132,12 @@ BEGIN
     SELECT 
         (SELECT TOP 1 id FROM clientes ORDER BY NEWID()),               -- cliente random
         (SELECT TOP 1 id FROM empleados ORDER BY NEWID()),              -- empleado random
-        (SELECT TOP 1 id FROM tipo_atenciones ORDER BY NEWID()),        -- tipo atenciÛn random
+        (SELECT TOP 1 id FROM tipo_atenciones ORDER BY NEWID()),        -- tipo atenci√≥n random
         DATEADD(DAY, ABS(CHECKSUM(NEWID())) % 900, '2023-01-01'),       -- fecha random
         estado_random,                                                  -- estado random
         CASE WHEN estado_random = 'Atendido' 
              THEN (ABS(CHECKSUM(NEWID())) % 5) + 1 
-             ELSE NULL END,                                             -- calificaciÛn solo si Atendido
+             ELSE NULL END,                                             -- calificaci√≥n solo si Atendido
         GETDATE(), NULL, NULL, 1, NULL, NULL
     FROM (
         SELECT TOP 1 estado_random 
@@ -171,7 +171,7 @@ BEGIN
         -- Producto random
         SELECT TOP 1 @producto_id = id FROM productos ORDER BY NEWID();
 
-        -- Generar n˙mero de cuenta ˙nico
+        -- Generar n√∫mero de cuenta √∫nico
         WHILE 1=1
         BEGIN
             SET @no_cuenta = CAST(ABS(CHECKSUM(NEWID())) % 900000000 + 100000000 AS NVARCHAR(50));
@@ -179,7 +179,7 @@ BEGIN
                 BREAK;
         END
 
-        -- Generar n˙mero de tarjeta ˙nico
+        -- Generar n√∫mero de tarjeta √∫nico
         WHILE 1=1
         BEGIN
             SET @no_tarjeta = CAST(ABS(CHECKSUM(NEWID())) % 9000000000000000 + 4000000000000000 AS NVARCHAR(50));
@@ -187,12 +187,12 @@ BEGIN
                 BREAK;
         END
 
-        -- Si es tarjeta de crÈdito (productos 3 y 4)
+        -- Si es tarjeta de cr√©dito (productos 3 y 4)
         IF @producto_id IN (3, 4)
         BEGIN
             SET @cod_interbancario = NULL;
-            SET @limite_cred = (ABS(CHECKSUM(NEWID())) % 5000) + 500;  -- lÌmite entre 500 y 5500
-            SET @saldo = (ABS(CHECKSUM(NEWID())) % (CAST(@limite_cred AS INT) + 1)); -- saldo entre 0 y lÌmite
+            SET @limite_cred = (ABS(CHECKSUM(NEWID())) % 5000) + 500;  -- l√≠mite entre 500 y 5500
+            SET @saldo = (ABS(CHECKSUM(NEWID())) % (CAST(@limite_cred AS INT) + 1)); -- saldo entre 0 y l√≠mite
         END
         ELSE
         BEGIN
@@ -236,7 +236,7 @@ DECLARE @nombre_tipo NVARCHAR(100);
 
 WHILE @contador <= @cantidad_total
 BEGIN
-    -- Elegir tipo de transacciÛn aleatoria
+    -- Elegir tipo de transacci√≥n aleatoria
     SELECT TOP 1 
         @tipo_transaccion_id = id, 
         @nombre_tipo = nombre 
@@ -246,8 +246,8 @@ BEGIN
     -- Monto aleatorio entre 10 y 1000
     SET @monto = (ABS(CHECKSUM(NEWID())) % 991) + 10;
 
-    -- TransacciÛn seg˙n tipo
-    IF @nombre_tipo = 'DepÛsito en Efectivo'
+    -- Transacci√≥n seg√∫n tipo
+    IF @nombre_tipo = 'Dep√≥sito en Efectivo'
     BEGIN
         -- Solo cuenta destino
         SELECT TOP 1 @cuenta_destino_id = id FROM cuentas ORDER BY NEWID();
@@ -264,7 +264,7 @@ BEGIN
         -- Solo cuenta origen
         SELECT TOP 1 @cuenta_origen_id = id, @saldo_origen = saldo FROM cuentas ORDER BY NEWID();
 
-        -- Si saldo permite la operaciÛn
+        -- Si saldo permite la operaci√≥n
         IF @saldo_origen >= @monto
         BEGIN
             INSERT INTO transacciones (cuenta_origen_id, cuenta_destino_id, tipo_transaccion_id, monto, fecha_transaccion, created_at, created_by)
