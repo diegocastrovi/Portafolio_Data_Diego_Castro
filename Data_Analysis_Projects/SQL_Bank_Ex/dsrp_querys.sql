@@ -32,7 +32,7 @@ GROUP BY cl.nombre
 ORDER BY 2 DESC;
 
 
---Lista de empleados con su nombre y sucursal a la que est·n asignados
+--Lista de empleados con su nombre y sucursal a la que est√°n asignados
 SELECT e.nombre, s.nombre
 FROM empleados e
 INNER JOIN sucursales s ON e.sucursal_id = s.id
@@ -69,7 +69,7 @@ INNER JOIN atenciones a ON ta.id = a.tipo_atencion_id
 GROUP BY ta.nombre, ta.descripcion, ta.id 
 
 
---Cantidad de atenciones realizadas por cada tipo de atencion pero que tengan m·s de 20 atenciones
+--Cantidad de atenciones realizadas por cada tipo de atencion pero que tengan m√°s de 20 atenciones
 
 SELECT ta.id , ta.nombre as 'Tipo_atencion', ta.descripcion, COUNT(a.id) AS	'atenciones_realizadas' 
 FROM tipo_atenciones ta
@@ -94,7 +94,7 @@ a.fecha_atencion,
 a.estado,
 CASE 
 	WHEN a.calificacion IS NULL  
-		THEN 'No tiene CalificaciÛn' 
+		THEN 'No tiene Calificaci√≥n' 
 	ELSE CAST(a.calificacion AS VARCHAR(5))
 END AS 'Calificacion'
 
@@ -107,7 +107,7 @@ INNER JOIN sucursales s ON s.id = e.sucursal_id
 WHERE a.estado = 'Atendido'
 
 
---Encuentre las atenciones que un empleado en especÌfico tiene pendientes
+--Encuentre las atenciones que un empleado en espec√≠fico tiene pendientes
 
 SELECT 
 c.nombre as 'Cliente', 
@@ -137,14 +137,14 @@ LEFT JOIN empleados es ON es.id = e.supervisor_id
 INNER JOIN sucursales s ON s.id = e.sucursal_id
 WHERE a.estado = 'En proceso' AND e.id = 10;  --Buscando las atenciones pendientes del empleado 11
 
--- EstadÌsticas financieras
+-- Estad√≠sticas financieras
 
 -- Calcula el saldo total en todas las cuentas
 
 SELECT SUM(saldo) AS 'Saldo_total_cuentas'
 FROM cuentas
 
---Encuentre la cuenta con el saldo m·s alto y el m·s bajo
+--Encuentre la cuenta con el saldo m√°s alto y el m√°s bajo
 
 --Forma 1
 SELECT TOP 1 no_cuenta, saldo FROM cuentas ORDER BY saldo DESC 
@@ -168,26 +168,26 @@ GROUP BY cl.nombre
 
 
 --Listado de clientes:
---Consulta el nombre, n˙mero de documento y correo de todos los clientes ordenados por fecha de nacimiento, de mayor a menor.
+--Consulta el nombre, n√∫mero de documento y correo de todos los clientes ordenados por fecha de nacimiento, de mayor a menor.
 SELECT * FROM clientes;
 
 SELECT nombre, numero_documento, email, fecha_nacimiento
 FROM clientes
 ORDER BY fecha_nacimiento
 
---Sucursales por orden alfabÈtico:
---ObtÈn el nombre y direcciÛn de todas las sucursales ordenadas alfabÈticamente.
+--Sucursales por orden alfab√©tico:
+--Obt√©n el nombre y direcci√≥n de todas las sucursales ordenadas alfab√©ticamente.
 
 SELECT  nombre, direccion
 FROM sucursales
 ORDER BY  nombre
 
---Productos de crÈdito:
---Muestra los nombres y descripciones de todos los productos cuyo nombre contenga la palabra 'CrÈdito'.
+--Productos de cr√©dito:
+--Muestra los nombres y descripciones de todos los productos cuyo nombre contenga la palabra 'Cr√©dito'.
 
 SELECT nombre
 FROM productos
-WHERE nombre like '%CrÈdito%'
+WHERE nombre like '%Cr√©dito%'
 
 -- Atenciones por cliente:
 --Muestra el nombre del cliente y la cantidad total de atenciones que ha recibido.
@@ -198,7 +198,7 @@ INNER JOIN atenciones a ON a.cliente_id = cl.id
 GROUP BY cl.nombre
 
 --Transacciones por tipo:
---ObtÈn la cantidad total de transacciones agrupadas por tipo de transacciÛn.
+--Obt√©n la cantidad total de transacciones agrupadas por tipo de transacci√≥n.
 SELECT tt.nombre, COUNT(t.id) AS 'Cantidad de transacciones'
 FROM transacciones t
 INNER JOIN tipo_transacciones tt ON t.tipo_transaccion_id = tt.id
@@ -212,15 +212,15 @@ FROM cuentas c
 INNER JOIN clientes cl ON c.cliente_id = cl.id
 GROUP BY cl.nombre
 
--- Promedio de calificaciÛn de atenciones:
---Calcula el promedio de calificaciÛn de las atenciones realizadas por cada empleado.
+-- Promedio de calificaci√≥n de atenciones:
+--Calcula el promedio de calificaci√≥n de las atenciones realizadas por cada empleado.
 SELECT	e.nombre, AVG(a.calificacion) AS 'Calificacion promedio' 
 FROM atenciones a 
 INNER JOIN empleados e ON a.empleado_id = e.id
 GROUP BY e.nombre
 
---Clientes con m·s de 3 atenciones:
---ObtÈn los nombres de los clientes que hayan recibido m·s de 3 atenciones.
+--Clientes con m√°s de 3 atenciones:
+--Obt√©n los nombres de los clientes que hayan recibido m√°s de 3 atenciones.
 
 SELECT cl.nombre AS 'Cliente' , COUNT(a.id) AS 'Numero de atenciones'
 FROM clientes cl 
@@ -228,7 +228,7 @@ INNER JOIN atenciones a ON a.cliente_id = cl.id
 GROUP BY  cl.nombre
 HAVING COUNT(a.id) > 3;
 
---Encuentra a los empleados que han atendido 1 o m·s clientes el ultimo mes
+--Encuentra a los empleados que han atendido 1 o m√°s clientes el ultimo mes
 SELECT e.nombre AS 'Empleado', COUNT(a.id) as 'Numero_atenciones'
 FROM empleados e
 INNER JOIN atenciones a ON a.empleado_id = e.id
@@ -238,7 +238,7 @@ GROUP BY e.nombre
 HAVING COUNT(a.id) > 0
 
 
---Encuentra las cuentas que han tenido transacciones en los ultimos 100 dÌas
+--Encuentra las cuentas que han tenido transacciones en los ultimos 100 d√≠as
 SELECT cu.*
 FROM cuentas cu
 INNER JOIN transacciones t ON cu.id = t.cuenta_origen_id
@@ -251,13 +251,13 @@ FROM empleados e
 INNER JOIN empleados es ON e.supervisor_id = es.id
 
 -- Top 5 cuentas con mayor saldo:
---Muestra las 5 cuentas con mayor saldo actual y su n˙mero de cuenta.
+--Muestra las 5 cuentas con mayor saldo actual y su n√∫mero de cuenta.
 SELECT TOP 5 saldo, no_cuenta
 FROM cuentas
 ORDER BY saldo DESC
 
 --Clientes sin transacciones en sus cuentas:
---Lista los nombres de los clientes que no han realizado ninguna transacciÛn en sus cuentas.
+--Lista los nombres de los clientes que no han realizado ninguna transacci√≥n en sus cuentas.
 
 SELECT cl.nombre, t.id
 FROM clientes cl
@@ -268,23 +268,23 @@ WHERE t.id is Null
 
 
 --Resumen de saldo por tipo de producto:
---Muestra cu·nto dinero hay acumulado en total en cada tipo de producto.
+--Muestra cu√°nto dinero hay acumulado en total en cada tipo de producto.
 
 SELECT p.nombre , sum(c.saldo) AS 'Saldo por producto'
 FROM productos p
 INNER JOIN cuentas c ON c.producto_id = p.id
 GROUP BY p.nombre
 -- Estado de cuentas con CASE:
---Crea una consulta que liste el n˙mero de cuenta y un campo adicional llamado estado_cuenta:
+--Crea una consulta que liste el n√∫mero de cuenta y un campo adicional llamado estado_cuenta:
 
---'Al dÌa' si saldo > 0
+--'Al d√≠a' si saldo > 0
 
 --'En rojo' si saldo <= 0
 
 SELECT 
 	no_cuenta,
 	CASE
-		WHEN saldo > 0 THEN 'Al dÌa'
+		WHEN saldo > 0 THEN 'Al d√≠a'
 		WHEN saldo <= 0 THEN 'En rojo'
 	END AS 'Estado de cuenta'
 FROM cuentas 
