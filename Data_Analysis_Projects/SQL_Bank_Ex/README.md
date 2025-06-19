@@ -1,11 +1,11 @@
 
-# 📊 Sistema de Gestión Bancaria con SQL Server
+# Sistema de Gestión Bancaria con SQL Server
 
 Proyecto académico/práctico en SQL Server que simula la estructura y operación básica de un banco. Incluye creación de base de datos, tablas relacionales, consultas SQL, funciones, procedimientos almacenados y generación de reportes transaccionales y estadísticos.
 
 ---
 
-## 📌 Descripción
+## Descripción
 
 Este proyecto simula la operativa de un banco, permitiendo:
 - Registrar clientes, empleados, cuentas, productos y transacciones.
@@ -16,7 +16,7 @@ Este proyecto simula la operativa de un banco, permitiendo:
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **SQL Server Management Studio (SSMS)**
 - **T-SQL**
@@ -27,7 +27,7 @@ Este proyecto simula la operativa de un banco, permitiendo:
 
 ---
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 /SQL/
@@ -38,9 +38,9 @@ Este proyecto simula la operativa de un banco, permitiendo:
 
 ---
 
-## 📊 Contenido de los Archivos
+## Contenido de los Archivos
 
-### 📄 Create_database.sql
+### Create_database.sql
 - Crea la base de datos `dsrp_banco`.
 - Define tablas relacionales:
   - `clientes`
@@ -54,7 +54,7 @@ Este proyecto simula la operativa de un banco, permitiendo:
   - `sucursales`
 - Incluye constraints de integridad referencial.
 
-### 📄 dsrp_querys.sql
+### dsrp_querys.sql
 Contiene consultas SQL para:
 
 - Análisis de clientes, empleados y transacciones.
@@ -63,7 +63,7 @@ Contiene consultas SQL para:
 - Consultas con `GROUP BY`, `HAVING`, `JOINS`, subconsultas y `CASE`.
 - Listados por filtros de fechas, montos y condiciones de negocio.
 
-### 📄 Funct_procedures_ex.sql
+### Funct_procedures_ex.sql
 Incluye:
 
 - **Vistas**: consulta de total de clientes.
@@ -78,7 +78,7 @@ Incluye:
 
 ---
 
-## 📸 Vista previa de consultas destacadas
+## Vista previa de consultas destacadas
 
 - Total de clientes
 - Cuentas con saldo mayor a un monto
@@ -88,7 +88,7 @@ Incluye:
 
 ---
 
-## 🚀 Cómo usar
+## Cómo usar
 
 1. Ejecutar `Create_database.sql` en SQL Server.
 2. Poblar datos de ejemplo según se requiera.
@@ -98,13 +98,7 @@ Incluye:
 
 ---
 
-## 📌 Contribuciones
+## Contribuciones
 
 Proyecto desarrollado por **Diego Castro** para prácticas avanzadas en modelado de datos relacional y desarrollo de consultas transaccionales y analíticas en SQL Server.
 
----
-
-## ✅ Notas
-
-- El proyecto es 100% funcional y adaptable a cualquier escenario de gestión bancaria simulado.
-- Puede ampliarse con dashboards en Power BI conectados a esta base.
