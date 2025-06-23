@@ -1,5 +1,6 @@
 
 # Sistema de Gestión Bancaria con SQL Server
+## (english version below)
 
 Proyecto académico/práctico en SQL Server que simula la estructura y operación básica de un sistema bancario. Incluye creación de base de datos, creación de registros, tablas relacionales, consultas SQL, funciones, procedimientos almacenados y generación de reportes transaccionales y estadísticos.
 
@@ -102,6 +103,105 @@ Incluye:
 5. Probar llamadas a procedimientos y funciones para ver resultados.
 
 ---
+# Banking Management System with SQL Server
+
+Academic/practical project in SQL Server that simulates the basic structure and operation of a banking system. Includes database creation, record insertion, relational tables, SQL queries, functions, stored procedures, and the generation of transactional and statistical reports.
+
+---
+
+## Description
+
+This project simulates the operations of a bank, enabling:
+- Registration of clients, employees, accounts, products, and transactions.
+- Execution of analytical and control queries.
+- Management of banking transactions with balance control.
+- Creation of stored procedures and functions to automate operations.
+
+---
+
+## Technologies Used
+
+- **SQL Server Management Studio (SSMS)**
+- **T-SQL**
+- **Stored Procedures**
+- **Scalar and Table-Valued Functions**
+- **Views**
+- **Analysis and Reporting Queries**
+
+---
+
+## Project Structure
+
+```
+/SQL/
+ Create_database.sql              # Database and table creation script
+ Insert_fict_values.sql           # Fictitious data creation script
+ dsrp_querys.sql                  # Analysis and reporting queries on the database
+ Funct_procedures_ex.sql          # Defined stored procedures and functions
+```
+
+---
+
+## File Contents
+
+### Create_database.sql
+- Creates the `dsrp_banco` database.
+- Defines relational tables:
+  - `clientes`
+  - `empleados`
+  - `cuentas`
+  - `transacciones`
+  - `productos`
+  - `tipo_transacciones`
+  - `tipo_atenciones`
+  - `atenciones`
+  - `sucursales`
+- Includes referential integrity constraints.
+
+### Insert_fict_values.sql
+- Inserts records into all created tables.
+- Fictitious values are generated for the `clientes`, `empleados`, `cuentas`, `sucursales`, `tipo_transacciones`, `tipo_atenciones`, and `productos` tables.
+- Random values are generated for the `atenciones` and `transacciones` tables using the previously created records.
+
+### dsrp_querys.sql
+Contains SQL queries for:
+- Analysis of clients, employees, and transactions.
+- Reports on customer service cases, account balances, and clients without transactions.
+- Usage statistics of accounts and transaction types.
+- Queries using `GROUP BY`, `HAVING`, `JOINS`, subqueries, and `CASE`.
+- Listings with filters by date, amounts, and business conditions.
+
+### Funct_procedures_ex.sql
+Includes:
+- **Views**: total number of clients.
+- **Scalar Functions**:
+  - Client age.
+  - Total balance by client.
+  - Average account balance by client.
+- **Stored Procedures**:
+  - Transaction queries by client.
+  - Transaction insertion with balance control by type.
+  - Query for the average balance per client using a function.
+
+---
+
+## Preview of Featured Queries
+
+- Total number of clients.
+- Accounts with a balance greater than a specified amount.
+- Service cases by type and employee.
+- Transactions in the last 30 days.
+- Balance summary by product.
+
+---
+
+## How to Use
+
+1. Run `Create_database.sql` in SQL Server.
+2. Run `Insert_fict_values.sql` to populate the tables.
+3. Run `Funct_procedures_ex.sql` to define stored procedures and functions.
+4. Run `dsrp_querys.sql` to perform analysis queries.
+5. Test stored procedure and function calls to view results.
 
 
 
