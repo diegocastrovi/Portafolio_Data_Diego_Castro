@@ -47,7 +47,7 @@ Proyecto desarrollado como práctica aplicada de Power BI para análisis comerci
 
 # Final Data Analysis Project — Power BI
 
-Interactive dashboard developed in Power BI as a final bootcamp project, focused on analyzing sales, profitability, and customer transaction behavior indicators.
+Interactive dashboard developed in Power BI, focused on analyzing sales, profitability, and customer transaction behavior indicators.
 
 ## Project Overview
 
