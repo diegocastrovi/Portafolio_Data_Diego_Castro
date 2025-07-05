@@ -7,7 +7,7 @@ Dashboard interactivo desarrollado en Power BI enfocado en el análisis de indic
 
 ## Descripción
 
-Este proyecto consiste en la creación de un dashboard de análisis de ventas para una base de datos simulada. Permite a los usuarios visualizar de forma dinámica los principales indicadores de negocio, realizar análisis comparativos y obtener insights clave para la toma de decisiones comerciales.
+Este proyecto consiste en la creación de un dashboard de análisis de ventas online relizadas en un año. Permite a los usuarios visualizar de forma dinámica los principales KPI's, realizar análisis comparativos y obtener insights clave para la toma de decisiones comerciales.
 
 ## Indicadores Clave Incluidos
 
