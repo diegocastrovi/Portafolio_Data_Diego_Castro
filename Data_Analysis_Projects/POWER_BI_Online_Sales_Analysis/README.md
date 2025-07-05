@@ -3,6 +3,8 @@
 
 Dashboard interactivo desarrollado en Power BI enfocado en el análisis de indicadores de ventas, rentabilidad y comportamiento transaccional de clientes.
 
+![alt text](https://github.com/diegocastrovi/Portafolio_Data_Diego_Castro/blob/main/Data_Analysis_Projects/POWER_BI_Online_Sales_Analysis/Dashboard_Online_sales.JPG)
+
 ## Descripción
 
 Este proyecto consiste en la creación de un dashboard de análisis de ventas para una base de datos simulada. Permite a los usuarios visualizar de forma dinámica los principales indicadores de negocio, realizar análisis comparativos y obtener insights clave para la toma de decisiones comerciales.
