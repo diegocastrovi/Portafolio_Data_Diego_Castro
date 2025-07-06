@@ -3,7 +3,7 @@ Proyecto de Data Analytics sobre la venta de celulares realizadas por una compa�
 
 El objetivo de este proyecto es revelar insights de valor a partir de los datos de ventas de cierta compañía telefónica
 
-Mayor detalle del procedimiento en Python en el archivo Analisis_data_venta_moviles.ipynb
+Mayor detalle del procedimiento y análisis en Python en el archivo Analisis_data_venta_moviles.ipynb
 
 ## Estructura y tratamiento de Datos 
 ###  Archivos
