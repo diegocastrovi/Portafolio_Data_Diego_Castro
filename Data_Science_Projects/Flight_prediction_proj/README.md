@@ -58,12 +58,21 @@ Se observa que a menor duración y a menos número de paradas el boleto es más 
 ### Feature Engineering
 Se aplicó las siguiente tecnicas para transformar las variables object en entradas admisibles por el algoritmo de ML
 
-ONE HOT ENCODING : 'Source'
-TARGET ENCODING : 'Airline', 'Destination'
-LABEL ENCODING : 'Total Stops' ('non-stop': 0, '2 stops':2,'1 stop':1,'3 stops':3, '4 stops':4)
+- ONE HOT ENCODING : 'Source'
+- TARGET ENCODING : 'Airline', 'Destination'
+- LABEL ENCODING : 'Total Stops' ('non-stop': 0, '2 stops':2,'1 stop':1,'3 stops':3, '4 stops':4)
 
 ### Modelo Machine Learning
 Se entrenó un modelo basado en Random Forest Regressor. Este modelo obtuvo un score en r2 de 0.8 (80%)
+
+Se automatizó el proceso de entrenamiento mediante la siguiente función mostrada : 
+
+![image](https://github.com/user-attachments/assets/f165e311-c915-441f-97ac-c6526846d391)
+
+La función entrena a un modelo específico (RandomForestRegressor, DecisionTreeRegressor, LinearRegression, etc) y obtiene métricas de su desempeño
+
+Se probó con los algoritmos RandomForestRegressor y DecisionTreeRegressor, el RandomForest obtuvo mejores resultados
+ 
 
 ### Hypertune Model
 Se utilizó el algoritmo de Cross Validation para optimizar el accurcy del modelo a 83%%
