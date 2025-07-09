@@ -65,6 +65,6 @@ LABEL ENCODING : 'Total Stops' ('non-stop': 0, '2 stops':2,'1 stop':1,'3 stops':
 ### Modelo Machine Learning
 Se entrenó un modelo basado en Random Forest Regressor. Este modelo obtuvo un score en r2 de 0.8 (80%)
 
-## Hypertune Model
+### Hypertune Model
 Se utilizó el algoritmo de Cross Validation para optimizar el accurcy del modelo a 83%%
 
